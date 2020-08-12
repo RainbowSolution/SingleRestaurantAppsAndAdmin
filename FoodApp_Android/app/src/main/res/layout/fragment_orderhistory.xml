@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_orange"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rlToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+        <ImageView
+            android:id="@+id/ivMenu"
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/ic_nevigation"
+            android:tint="@color/light_orange" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_orange"
+            android:textSize="@dimen/_14ssp"
+            android:layout_centerInParent="true"
+            fontPath="@string/font_bold"
+            android:text="Order History"
+            tools:ignore="MissingPrefix" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tvNoDataFound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="No OrderHistory Found"
+        android:textColor="@color/gray"
+        fontPath="@string/font_bold"
+        android:textSize="@dimen/_12ssp"
+        android:visibility="gone"
+        tools:ignore="MissingPrefix" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rvOrderHistory"/>
+</LinearLayout>

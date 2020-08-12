@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@color/gray_orange"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        android:id="@+id/rlApplyPromocode"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Have a promocode"
+            android:textSize="@dimen/_10sdp"
+            fontPath="@string/font_medium"
+            tools:ignore="MissingPrefix"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:padding="@dimen/_10sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:textSize="@dimen/_12sdp"
+            fontPath="@string/font_medium"
+            tools:ignore="MissingPrefix"
+            android:textColor="#007AFF"
+            android:id="@+id/tvDone"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

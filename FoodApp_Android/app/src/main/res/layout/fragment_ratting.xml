@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_orange"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:id="@+id/rlToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <ImageView
+            android:id="@+id/ivMenu"
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/ic_nevigation"
+            android:tint="@color/light_orange" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_orange"
+            android:textSize="@dimen/_14ssp"
+            android:layout_centerInParent="true"
+            fontPath="@string/font_bold"
+            android:text="Ratting"
+            tools:ignore="MissingPrefix" />
+        <ImageView
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_4sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:tint="@color/light_orange"
+            android:id="@+id/ivAddWallpaper"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_add_sevice"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlToolBar"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvNoDataFound"
+            fontPath="@string/font_regular"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="No Ratting Found"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_12ssp"
+            android:visibility="gone"
+            tools:ignore="MissingPrefix" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rvRatting"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
